@@ -80,18 +80,18 @@ logger.info('Environment Configuration:', {
 
 // Server Configuration
 const allowedOrigins = [
-  'http://localhost:8005',
-  'http://localhost:8006',
-  'http://localhost:8007',
-  'http://localhost:8008',
-  'http://localhost:3000',
-  'http://127.0.0.1:5500',
-  'http://127.0.0.1:5502',
-  'http://44.223.23.145:8005',
-  'http://44.223.23.145:8006',
-  'http://44.223.23.145:8007',
-  'http://44.223.23.145:8008',
-  process.env.FRONTEND_URL || 'http://localhost:3000',
+  'http://13.62.51.32:8005',
+  'http://13.62.51.32:8006',
+  'http://13.62.51.32:8007',
+  'http://13.62.51.32:8008',
+  'http://13.62.51.32:3000',
+  'http://13.62.51.32:5500',
+  'http://13.62.51.32:5502',
+  'http://13.62.51.32:8005',
+  'http://13.62.51.32:8006',
+  'http://13.62.51.32:8007',
+  'http://13.62.51.32:8008',
+  process.env.FRONTEND_URL || 'http://13.62.51.32:3000',
 ];
 
 // Enhanced CORS setup
@@ -168,7 +168,7 @@ app.use((req, res, next) => {
 // Database Configuration
 const pool = new Pool({
   user: process.env.DB_USER || 'postgres',
-  host: process.env.DB_HOST || 'localhost',
+  host: process.env.DB_HOST || '13.62.51.32',
   database: process.env.DB_NAME || 'new_employee_db',
   password: process.env.DB_PASSWORD || 'Password@12345',
   port: process.env.DB_PORT || 5432,
