@@ -80,18 +80,18 @@ logger.info('Environment Configuration:', {
 
 // Server Configuration
 const allowedOrigins = [
-  'http://13.62.51.32:8005',
-  'http://13.62.51.32:8006',
-  'http://13.62.51.32:8007',
-  'http://13.62.51.32:8008',
-  'http://13.62.51.32:3000',
-  'http://13.62.51.32:5500',
-  'http://13.62.51.32:5502',
-  'http://13.62.51.32:8005',
-  'http://13.62.51.32:8006',
-  'http://13.62.51.32:8007',
-  'http://13.62.51.32:8008',
-  process.env.FRONTEND_URL || 'http://13.62.51.32:3000',
+  'http://18.204.219.108:8005',
+  'http://18.204.219.108:8006',
+  'http://18.204.219.108:8007',
+  'http://18.204.219.108:8008',
+  'http://18.204.219.108:3000',
+  'http://18.204.219.108:5500',
+  'http://18.204.219.108:5502',
+  'http://18.204.219.108:8005',
+  'http://18.204.219.108:8006',
+  'http://18.204.219.108:8007',
+  'http://18.204.219.108:8008',
+  process.env.FRONTEND_URL || 'http://18.204.219.108:3000',
 ];
 
 // Enhanced CORS setup
@@ -168,9 +168,9 @@ app.use((req, res, next) => {
 // Database Configuration
 const pool = new Pool({
   user: process.env.DB_USER || 'postgres',
-  host: process.env.DB_HOST || '13.62.51.32',
+  host: process.env.DB_HOST || '18.204.219.108',
   database: process.env.DB_NAME || 'new_employee_db',
-  password: process.env.DB_PASSWORD || 'Password@12345',
+  password: process.env.DB_PASSWORD || 'admin234',
   port: process.env.DB_PORT || 5432,
   connectionTimeoutMillis: 10000,
   idleTimeoutMillis: 30000,
